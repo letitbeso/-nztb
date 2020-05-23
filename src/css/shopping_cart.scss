@@ -1,0 +1,858 @@
+@charset "utf-8";
+.tb-header,.conent,.cart-layout-TB,.tb-footer .tb-footer-hd,.tb-footer .tb-footer-bd{
+    width: 1190px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+.tb-header{
+    padding: 20px 0 40px;
+    position: relative;
+    height: 35px;
+}
+/* logo部分 */
+#logo {
+    float: left;
+}
+.cart-logo a {
+    width: 140px;
+    height: 45px;
+    font-size: 45px;
+    line-height: 45px;
+    color: #f50;
+    position: relative;
+    display: inline-block;
+}
+.cart-logo a .iconfont{
+    font-size: 45px;
+}
+
+.cart-logo  span {
+    font-size: 20px;
+    font-weight: 500;
+}
+/*  */
+.tb-header .search {
+    float: right;
+    padding: 0;
+    border:4px solid #FF4400;
+}
+/* 搜索框前面的下拉菜单 */
+.tb-header .search-triggers {
+    position: relative;
+   
+    z-index: 1000;
+}
+.tb-header .search-triggers .ks-switchable-nav {
+    width: 74px;
+    height: 28px;
+    position: absolute;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #f5f5f5;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    line-height: 28px;
+}
+.tb-header .search-triggers li {
+    display: none;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+/* 显示第一个li */
+.tb-header .search-triggers li.selected {
+    display: block;
+}
+/* 下拉小标识 */
+.tb-header .search-triggers s {
+    line-height: 0;
+    border-width: 4px;
+    border-color: #666 transparent transparent;
+    border-style: solid dashed dashed;
+    height: 0;
+    position: absolute;
+    top: 12px;
+    font-size: 0;
+    left: 60px;
+    z-index: 10;
+
+}
+
+.tb-header .search-triggers s s {
+    border-width: 3px;
+    border-color: #f6f6f6 transparent transparent;
+    top: -4px;
+    left: -3px;
+    position: absolute;
+}
+
+/* 搜索输入部分 */
+
+/* 框框 */
+.tb-header .search-panel {
+    width: 515px;
+}
+
+
+.tb-header .search-panel .search-button {
+    position: relative;
+    z-index: 1;
+    float: right;
+    background: #fff;
+   
+}
+
+.tb-header .search-panel .search-button button {
+    height: 28px;
+    width: 93px;
+    background-color: #ff4400;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* 中间 */
+.search-panel-fields input{
+    border: none;
+    height: 28px;
+    width: 422px;
+}
+
+/* 内容部分 */
+
+
+.cart {
+    min-height: 400px;
+}
+/* 购物车的car */
+.cart-filter-bar {
+    overflow: hidden;
+    font-size: 12px;
+    position: relative;
+}
+/* ul */
+.switch-cart {
+    overflow: hidden;
+    height: 33px;
+}
+/* ul下li的公共样式 */
+.switch-cart {
+    overflow: hidden;
+    height: 33px;
+}
+.btn-switch-cart {
+    float: left;
+    font-weight: 700;
+    font-size: 16px;
+    height: 16px;
+    line-height: 1.1;
+    text-align: center;
+    padding: 0 0 15px 0;
+    cursor: pointer;
+    margin-left: -1px;
+
+}
+
+/*  */
+.switch-cart-0 a {
+    padding-left: 15px;
+}
+.btn-switch-cart a {
+    padding-left: 25px;
+    text-decoration: none;
+    color: #ff4400;
+}
+
+
+/*  */
+.switch-cart .current a em {
+    color: #f40;
+}
+.btn-switch-cart .number {
+    color: #f40;
+    font-size: 14px;
+    margin: 0 30px 0 5px;
+    font-weight: 400;
+}
+.btn-switch-cart .pipe {
+    width: 1px;
+    height: 12px;
+    display: inline-block;
+    background: #e8e8e8;
+}
+em{
+    color: #3c3c3c;
+}
+/* 去掉最后一个竖线 */
+.switch-cart-4 .pipe {
+    display: none;
+}
+
+/* 已选商品 */
+.cart-filter-bar .cart-sum {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 25px;
+    line-height: 25px;
+}
+.cart-filter-bar .cart-sum .pay-text{
+    font-size: 12px;
+}
+
+/* 数额 */
+.cart-sum .price {
+    font-family: Arial,Verdana;
+    font-weight: 700;
+    margin-right: 5px;
+    color: #f40;
+}
+.cart-sum .price em {
+    font-family: Verdana,Arial;
+    padding-left: 2px;
+    font-weight: 700;
+    color: #f40;
+}
+.cart-sum .submit-btn {
+    display: inline-block;
+    width: 55px;
+   
+    border-radius: 2px;
+    text-align: center;
+
+    text-decoration: none;
+
+    background: #aaa;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+
+/* 刚刚 */
+.wrap-line {
+    clear: both;
+    background: #e6e6e6;
+    height: 2px;
+    position: relative;
+}
+.wrap-line .floater {
+    background: #f40;
+    height: 2px;
+
+    position: absolute;
+    top: 0;
+
+    overflow: hidden;
+    width: 132px;
+    left: -1px;
+}
+
+
+/* car-main */
+.cart-main {
+    min-height: 210px;
+}
+.cart-table-th {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: #3c3c3c;
+}
+ .wp {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+
+
+
+/* ****************************** */
+.cart-table-th .th {
+    float: left;
+}
+.wp{
+    font-size: 12px;
+}
+
+
+
+.cart-table-th .th-chk {
+    font-size: 12px;
+    text-align: left;
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+.cart-table-th .th-chk .select-all {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    cursor: pointer;
+}
+.cart-table-th .th-chk .cart-checkbox{
+    margin: -1px 0 0 15px;
+    vertical-align: middle;
+
+}
+.cart-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+   
+}
+
+.cart-checkbox input {
+    position: relative;
+    top: -15px;
+    width: 15px;
+    height: 15px;
+    background-color: #666;
+}
+
+
+
+/* 商品信息 */
+.wp .th-item{
+    width: 342px;
+}
+.wp .th-item .td-inner {
+    padding-left: 91px;
+}
+.th .td-inner {
+    padding: 0 0 0 10px;
+}
+/* 中间 */
+.wp .th-info{
+    width: 212px;
+    padding-right: 40px;
+}
+/* 单价 */
+.wp .th-price{
+    width: 130px;
+}
+/* 数量 */
+.wp .th-amount{
+    width: 120px;
+}
+/* 金额 */
+.wp .th-sum{
+    width: 140px;
+}
+.cart-table-th .th-sum .td-inner, .cart-table-th .th-op .td-inner {
+    padding: 0;
+}
+.wp .th-op{
+    width: 119px;
+    padding: 0 0 0 30px;
+}
+
+
+/* 商品词条 */
+.car_box {
+            margin: 0 auto;
+            width: 1190px;
+            height: 170px;
+            
+            margin-bottom: 15px;
+            font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+        }
+
+        .car_box_h {
+            position: relative;
+            height: 38px;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .car_box_h_c {
+            position: relative;
+            line-height: 38px;
+            padding-left: 15px;
+
+
+
+        }
+
+        /* .car_box_h_c input {
+            width: 15px;
+            height: 15px;
+            text-decoration: none;
+            background-color: #fff;
+        } */
+
+        .car_box_h_c input {
+            width: 15px;
+            height: 15px;
+            background-color: #fff;
+            border: 1px solid #c9c9c9;
+            border-radius: 2px;
+            outline: none;
+        }
+
+        .car_box_h_c span {
+            margin-left: 15px;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+        }
+
+        .car_box_h_c span a {
+            width: 20px;
+            height: 20px;
+            color: #3c3c3c;
+        }
+
+        .car_box_h_c span a img {
+            width: 100%;
+            height: 100%;
+            color: #3c3c3c;
+        }
+
+
+        .car_box_con {
+            border: 1px solid #ccc;
+            background-color: #FCFCFC;
+        }
+
+        .car_box_con_box {
+            position: relative;
+            background: #fcfcfc;
+            width: 100%;
+            height: 100%;
+        }
+
+        .car_box_con_box ul li:nth-child(1) {
+            position: relative;
+            overflow: hidden;
+            float: left;
+            min-height: 119px;
+            width: 50px;
+        }
+
+        .tb_inner {
+            padding-top: 20px;
+        }
+
+        .tb_inner input {
+            width: 15px;
+            height: 15px;
+            margin-left: 20px;
+        }
+
+        .car_box_con_box ul li:nth-child(2) {
+            float: left;
+            min-height: 119px;
+            width: 342px;
+
+        }
+
+        .tb_inner_l {
+            background: #fff;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #eee;
+            float: left;
+            overflow: hidden;
+        }
+
+        .tb_inner_l a {
+            display: table-cell;
+            width: 80px;
+            height: 80px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .tb_inner_l a img {
+            width: 80px;
+            height: 64px;
+        }
+
+        .tb_inner_r {
+            margin: -3px 0 0 91px;
+            padding-right: 25px;
+        }
+
+        .item-basic-info {
+            min-height: 40px;
+        }
+
+        .item-basic-info a {
+            font-size: 12px;
+            display: block;
+            max-height: 36px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #3c3c3c;
+
+        }
+
+        .promo-logos {
+
+            overflow: hidden;
+            min-height: 26px;
+        }
+
+        .item-icon-list .item-icons {
+            margin-bottom: 3px;
+        }
+
+        .item-icon-list .item-icon {
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: #3c3c3c;
+        }
+
+        .item-icon-list .item-icon img {
+            width: 14px;
+            height: 16px;
+            vertical-align: middle;
+        }
+
+        .car_box_con_box ul li:nth-child(3) {
+            float: left;
+            min-height: 119px;
+            width: 212px;
+            padding-right: 40px;
+        }
+
+        .item-props {
+            padding: 16px 0;
+            min-height: 84px;
+
+            border: 1px dashed transparent;
+            position: relative;
+
+        }
+
+        .car_box_con_box ul li:nth-child(4) {
+            color: #9c9c9c;
+            float: left;
+            min-height: 119px;
+            overflow: hidden;
+            width: 130px;
+        }
+
+        .item-content .price-content {
+            padding: 8px 0 0 10px;
+            line-height: 1;
+            width: 74px;
+        }
+
+        .price-line {
+            padding: 0 0 4px 0;
+        }
+
+        .price-now {
+            color: #3c3c3c;
+            font-weight: 700;
+            font-family: Verdana, Tahoma, arial;
+        }
+
+        .td-inner {
+            padding-top: 12px;
+        }
+
+
+        .car_box_con_box ul li:nth-child(5) {
+            float: left;
+            min-height: 119px;
+            overflow: hidden;
+            width: 120px;
+        }
+
+        .item-amount {
+            width: 77px;
+            height: 25px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        .item-amount a {
+            display: block;
+            height: 23px;
+            width: 17px;
+            border: 1px solid #e5e5e5;
+            background: #f0f0f0;
+            text-align: center;
+            line-height: 23px;
+            color: #444;
+            position: absolute;
+            top: 0;
+        }
+
+        .minus {
+            border-right-color: transparent;
+            float: left;
+            left: 0;
+        }
+
+        .plus {
+            border-left-color: transparent;
+            float: left;
+            right: 0;
+        }
+
+        .text-amount {
+            width: 39px;
+            height: 15px;
+            line-height: 15px;
+            border: 1px solid #aaa;
+            color: #343434;
+            text-align: center;
+            padding: 4px 0;
+            background-color: #fff;
+            background-position: -75px -375px;
+            position: absolute;
+            z-index: 2;
+            left: 18px;
+            top: 0;
+        }
+
+        .car_box_con_box ul li:nth-child(6) {
+            color: #f40;
+            font-weight: 700;
+            float: left;
+            min-height: 119px;
+            overflow: hidden;
+            width: 140px;
+        }
+
+        .car_box_con_box ul li:nth-child(7) {
+            float: left;
+            min-height: 119px;
+            overflow: hidden;
+            
+            padding: 0 0 0 30px;
+        }
+        .car_box_con_box ul li:nth-child(7) a{
+            color: #343434;
+        }
+
+
+
+
+
+
+/* ************ */
+/* 底部 吸地*/
+.float-bar{
+    width: 1190px;
+    margin-left:165px ;
+    position: fixed;
+}
+.fixed-bottom {
+    bottom: -1px;
+    z-index: 9999;
+}
+
+.float-bar-right, .float-bar-wrapper {
+    background: #e5e5e5;
+}
+.float-bar-wrapper {
+    height: 50px;
+    overflow: hidden;
+}
+
+
+/* 内部 */
+.float-bar .select-all {
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.float-bar .select-all .cart-checkbox {
+    vertical-align: middle;
+    margin-top: -2px;
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+   
+}
+
+/* 功能 */
+.float-bar .operations {
+    float: left;
+    line-height: 50px;
+    height: 50px;
+}
+.float-bar .operations a {
+    margin-left: 25px;
+    float: left;
+    font-size: 12px;
+    color: #3c3c3c;
+}
+
+/* 结算 */
+.float-bar-right {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+    padding-left: 20px;
+    background: #e5e5e5;
+}
+
+
+.float-bar .amount-sum, .float-bar .price-sum, .float-bar .btn-area {
+    float: left;
+}
+.float-bar .amount-sum, .float-bar .price-sum {
+    height: 48px;
+    color: #3c3c3c;
+}
+
+
+.float-bar .amount-sum {
+    cursor: pointer;
+}
+
+.float-bar .amount-sum .txt {
+    float: left;
+    line-height: 48px;
+    font-size: 12px;
+}
+.float-bar .amount-sum em {
+    line-height: 50px;
+    padding: 0 5px;
+    color: #f40;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: tohoma,arial;
+    float: left;
+ 
+}
+
+.float-bar .price-sum .txt{
+    float: left;
+    line-height: 48px;
+    font-size: 12px;
+}
+
+.float-bar .price-sum .price {
+    color: #f40;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+    font-family: Arial;
+    vertical-align: middle;
+    float: left;
+}
+.float-bar .price-sum .price em {
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0 3px;
+    color: #f40;
+}
+
+.float-bar .submit-btn {
+    display: inline-block;
+  
+    height: 50px;
+    line-height: 50px;
+  
+    text-align: center;
+    font-family: 'Lantinghei SC','Microsoft Yahei';
+    font-size: 20px;
+    border-radius: 2px;
+    background: #B0B0B0;
+    color: #fff;
+    border-left: 1px solid #e7e7e7;
+    width: 119px;
+    cursor: not-allowed;
+    text-decoration: none;
+  
+}
+
+
+
+
+/* 底部***公用 */
+J_SiteFooter{
+    min-height: 150px;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.tb-footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 125px;
+    margin-top: 20px;
+    padding-bottom: 9px;
+    background-color: #fff;
+    font-size: 12px;
+}
+.tb-footer .tb-footer-hd {
+    padding-top: 7px;
+    border-top: 1px solid #ddd;
+}
+.tb-footer .tb-footer-hd p {
+    margin-bottom: 8px;
+    line-height: 27px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+
+.tb-footer em, .tb-footer span {
+    color: #9c9c9c;
+}
+.tb-footer .tb-footer-hd a, .tb-footer .tb-footer-bd a {
+    white-space: nowrap;
+    color: #6c6c6c;
+    text-decoration: none;
+}
+.tb-footer span {
+    margin: 0 4px;
+}
+.tb-footer b {
+    margin: 0 3px;
+    font-weight: 400;
+    color: #ddd;
+}
+/* 所有 */
+.tb-footer p {
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+.tb-footer span {
+    margin: 0 4px;
+}
+
+.tb-footer b {
+    margin: 0 3px;
+    font-weight: 400;
+    color: #ddd;
+}
+.tb-footer em {
+    margin-left: 30px;
+    font-style: normal;
+    color: #9c9c9c;
+}
+
+.tb-footer .tb-footer-mod {
+    background-position: -861px 0px;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}

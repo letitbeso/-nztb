@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/shopping_cart.css">
+
+    <link rel="stylesheet" href="./font_login/iconfont.css">
+    <link rel="stylesheet" href="./font_atqztv04jvv/iconfont.css">
+
+    <link rel="shortcut icon" href="#" />
+
+</head>
+
+<body>
+    <!-- 公共的头 -->
+    <header>
+
+        <div id="h-nav">
+            <div class="h-nav-wrap">
+                <ul class="hNavWrap_l">
+
+                    <li>
+                        <div><span>用户的名字</span><span class="iconfont icon-xiala1"></span></div>
+                    </li>
+                    <li>
+                        <div><a href=" ">
+                                <span>手机逛淘宝</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                
+                <ul class="hNavWrap_r">
+                    <li>
+                        <div><span>我的淘宝</span><span class="iconfont icon-xiala1"></span></div>
+                    </li>
+                    <li>
+                        <div><span class="iconfont icon-gouwuche1"></span><span>购物车</span><span
+                                class="iconfont icon-xiala1"></span></div>
+                    </li>
+                    <li>
+                        <div><span>收藏</span><span class="iconfont icon-xiala1"></span></div>
+                    </li>
+                    <li>
+                        <div><span>商品分类</span></div>
+                    </li>
+                    <li>
+                        <div><span>|</span></div>
+                    </li>
+                    <li>
+                        <div><span>牵牛卖家中心</span><span class="iconfont icon-xiala1"></span></div>
+                    </li>
+                    <li>
+                        <div><span>联系客服</span><span class="iconfont icon-xiala1"></span></div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="iconfont icon-daohang">
+                            </span><span>网站导航</span>
+                            <span class="iconfont icon-xiala1"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="page">
+        <div class="conent">
+            <!-- 头部搜索框 -->
+            <div class="tb-header">
+                <!-- logo -->
+                <h1 id="logo" class="cart-logo">
+                    <a href="index.html"><i class="iconfont icon-taobaowang2"></i></a><span>购物车</span>
+                </h1>
+
+                <!-- 搜索框 -->
+                <div class="search">
+
+
+                    <!-- 搜索选项 -->
+                    <div class="search-triggers">
+                        <ul class="ks-switchable-nav">
+                            <li class="J_SearchTab selected">
+                                <a href="">宝贝</a>
+                            </li>
+                            <li class="J_SearchTab">
+                                <a href="">天猫</a>
+                            </li>
+                            <li class="J_SearchTab">
+                                <a href="">店铺</a>
+                            </li>
+                        </ul>
+                        <s><s></s></s>
+                    </div>
+
+                    <!--  -->
+                    <div class="search-panel ">
+                        <form name="search" id="J_TSearchForm" class="">
+
+                            <!-- 搜索按钮 -->
+                            <div class="search-button">
+                                <button class="btn-search" type="submit">搜 索</button>
+                            </div>
+                            <!-- 搜索框 、中间、空白部分-->
+                            <div class="search-panel-fields">
+
+                                <div class="search-combobox">
+                                    <div class="search-combobox-input-wrap">
+                                        <input id="q" name="q" class="search-combobox-input">
+                                    </div>
+                                </div>
+                                <!-- 放大镜 -->
+                                <i id="J_SearchIcon" style="display: inline;"></i>
+
+                            </div>
+
+                            <input type="hidden" name="spm" value="1.1000386.5803581.d4908513">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cart-layout-TB">
+                <div class="cart">
+
+                    <!-- 购物车列表的nav -->
+                    <div id="J_FilterBar" class="cart-filter-bar">
+
+                        <!-- 列表 -->
+                        <ul id="J_CartSwitch" class="switch-cart">
+
+                            <li class="btn-switch-cart switch-cart-0 current">
+                                <a href="#" class="J_MakePoint">
+                                    <em>全部商品</em>
+                                    <span class="number">0</span>
+                                    <span class="pipe"></span>
+                                </a>
+                            </li>
+                            <li class="btn-switch-cart switch-cart-2 ">
+                                <a href="#" class="J_MakePoint" >
+                                    <em>降价商品</em>
+                                    <span class="number">0</span>
+                                    <span class="pipe"></span>
+                                </a>
+                            </li>
+                            <li class="btn-switch-cart switch-cart-4 ">
+                                <a href="#" class="J_MakePoint">
+                                    <em>库存紧张</em>
+                                    <span class="number">1</span>
+                                    <span class="pipe"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 已选商品 -->
+                        <div class="cart-sum">
+                            <span class="pay-text">已选商品（不含运费）</span>
+                            <strong class="price">
+                                <em id="J_SmallTotal">
+                                    <span class="total-symbol">&nbsp;</span>
+                                    0.00
+                                </em>
+                            </strong>
+                            <a id="J_SmallSubmit" class="submit-btn submit-btn-disabled">结&nbsp;算</a>
+                        </div>
+                        <!-- 刚刚 -->
+                        <div class="wrap-line">
+                            <div class="floater"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- 中间物品信息（表头） -->
+                    <div class="cart-main">
+
+                        <!-- nav -->
+                        <div class="cart-table-th">
+                            <div class="wp">
+
+                                <div class="th th-chk">
+                                    <div id="J_SelectAll1" class="select-all J_SelectAll">
+                                        <div class="cart-checkbox">
+                                            <input class="J_CheckBoxShop" type="checkbox" name="select-all"
+                                                value="true">
+
+                                        </div>
+                                        &nbsp;&nbsp;全选
+                                    </div>
+
+                                </div>
+
+                                <div class="th th-item">
+                                    <div class="td-inner">商品信息</div>
+                                </div>
+                                <div class="th th-info">
+                                    <div class="td-inner">&nbsp;</div>
+                                </div>
+                                <div class="th th-price">
+                                    <div class="td-inner">单价</div>
+                                </div>
+                                <div class="th th-amount">
+                                    <div class="td-inner">数量</div>
+                                </div>
+                                <div class="th th-sum">
+                                    <div class="td-inner">金额</div>
+                                </div>
+                                <div class="th th-op">
+                                    <div class="td-inner">操作</div>
+                                </div>
+                                <!-- <div class="th th-vil hidden">
+                                    <div class="td-inner">购买客户信息</div>
+                                </div> -->
+
+                            </div>
+                        </div>
+
+                        <!-- 获取到的商品,生成在里面 -->
+                        <div id="J_OrderList">
+                            <!-- 第一个商品 -->
+                           
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+
+
+    <!-- 底部结算栏 -->
+
+    <div id="J_FloatBar" class="float-bar clearfix fixed-bottom">
+
+
+        <div class="float-bar-wrapper">
+            <!-- 选择框 -->
+            <div id="J_SelectAll2" class="select-all J_SelectAll">
+                <div class="cart-checkbox">
+                    <input class="J_CheckBoxShop" id="J_SelectAllCbx2" type="checkbox"   value="true">
+
+                </div>&nbsp;全选
+            </div>
+
+            <!-- 功能 -->
+            <div class="operations">
+                <a href="#" hidefocus="true" class="J_DeleteSelected">删除</a>
+                <a href="#" hidefocus="true" class="J_ClearInvalid hidden" style="display: inline;">清除失效宝贝</a>
+                <a href="#" hidefocus="true" class="J_BatchFav">移入收藏夹</a>
+                <a href="#" hidefocus="true" class="J_BatchShare">分享</a>
+            </div>
+            <!-- 结算 -->
+            <div class="float-bar-right">
+
+                <!-- 以选件数 -->
+                <div id="J_ShowSelectedItems" class="amount-sum">
+                    <span class="txt">已选商品</span>
+                    <em id="J_SelectedItemsCount">0</em>
+                    <span class="txt">件</span>
+                    <div class="arrow-box">
+                        <span class="selected-items-arrow"></span>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+
+                <!-- <div id="J_CheckCOD" class="check-cod" style="display: none;">
+                                    <span class="icon-cod"></span>
+                                    <span class="s-checkbox J_CheckCOD"></span>
+                                    货到付款
+                                </div>
+
+                                <div class="pipe"></div> -->
+                <!-- 合计 -->
+                <div class="price-sum">
+                    <span class="txt">合计（不含运费）：</span>
+                    <strong class="price">
+                        <em id="J_Total">
+                            <span class="total-symbol">
+                                &nbsp;
+                            </span>0.00
+                        </em></strong>
+                </div>
+                <!-- 金额 -->
+                <div class="btn-area">
+                    <a href=" " id="J_Go" class="submit-btn submit-btn-disabled"
+                        aria-label="请注意如果没有选择宝贝，将无法结算">
+                        <span>结&nbsp;算</span>
+                        <b></b>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- 可能感兴趣 -->
+
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+
+    <!-- 底部信息 -->
+    <div id="J_SiteFooter">
+        <div class="tb-footer">
+
+            <div class="tb-footer-hd">
+                <p>
+                    <span>
+                        <a href=" " rel="noopener noreferrer">阿里巴巴集团</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="index.html" rel="noopener noreferrer">淘宝网</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.tmall.com" rel="noopener noreferrer">天猫</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://ju.taobao.com" rel="noopener noreferrer">聚划算</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.aliexpress.com" rel="noopener noreferrer">全球速卖通</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.alibaba.com/" rel="noopener noreferrer">阿里巴巴国际交易市场</a>
+                    </span><b>|</b>
+                    <!-- <span>
+                            <a href="http://www.1688.com" rel="noopener noreferrer">1688</a>
+                        </span><b>|</b> -->
+                    <span>
+                        <a href="http://www.alimama.com" rel="noopener noreferrer">阿里妈妈</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.fliggy.com/" rel="noopener noreferrer">飞猪</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="https://taoxiaopu.taobao.com/" rel="noopener noreferrer">淘小铺</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.aliyun.com" rel="noopener noreferrer">阿里云计算</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.alios.cn/" rel="noopener noreferrer">AliOS</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.aliqin.cn/" rel="noopener noreferrer">阿里通信</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.etao.com/" rel="noopener noreferrer">一淘</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.net.cn" rel="noopener noreferrer">万网</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.autonavi.com/" rel="noopener noreferrer">高德</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.uc.cn/" rel="noopener noreferrer">UC</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.umeng.com/" rel="noopener noreferrer">友盟</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="https://s.alibaba.com/?scene=clinks" rel="noopener noreferrer">阿里安全</a>
+                    </span><br>
+                    <span>
+                        <a href="http://www.xiami.com" rel="noopener noreferrer">虾米</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="https://www.damai.cn/" rel="noopener noreferrer">大麦网</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.dingtalk.com/?lwfrom=20150130160830727" rel="noopener noreferrer">钉钉</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="https://www.alipay.com" rel="noopener noreferrer">支付宝</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.youku.com/" rel="noopener noreferrer">优酷</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.tudou.com/" rel="noopener noreferrer">土豆</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.alihealth.cn/" rel="noopener noreferrer">阿里健康</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.alibabapictures.com/simp/0-home.html" rel="noopener noreferrer">阿里影业</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="http://www.alisports.com/cn/" rel="noopener noreferrer">阿里体育</a>
+                    </span><b>|</b>
+                    <span>
+                        <a href="https://www.mybank.cn/" rel="noopener noreferrer">网商银行</a>
+                    </span>
+                </p>
+            </div>
+
+            <div class="tb-footer-bd">
+                <p>
+                    <span>
+                        <a href="https://www.taobao.com/tbhome/page/about/home" rel="noopener noreferrer">关于淘宝</a>
+                    </span>
+                    <span>
+                        <a href="https://www.taobao.com/tbhome/page/about/partner?spm=a21bo.9614792.102.5.ed410c5siU20Y"
+                            rel="noopener noreferrer">合作伙伴</a>
+                    </span>
+                    <span>
+                        <a href="http://pro.taobao.com" rel="noopener noreferrer">营销中心</a>
+                    </span>
+                    <span>
+                        <a href="http://jubao.alibaba.com/internet/readme.htm?site=taobao"
+                            rel="noopener noreferrer">廉正举报</a>
+                    </span>
+                    <span>
+                        <a href="https://consumerservice.taobao.com/" rel="noopener noreferrer">联系客服</a>
+                    </span>
+                    <span>
+                        <a href="http://open.taobao.com" rel="noopener noreferrer">开放平台</a>
+                    </span>
+                    <span>
+                        <a href="http://www.taobao.com/about/join.php" rel="noopener noreferrer">诚征英才</a>
+                    </span>
+                    <span>
+                        <a href="http://consumerservice.taobao.com/contact-us" rel="noopener noreferrer">联系我们</a>
+                    </span>
+                    <span>
+                        <a href="https://www.taobao.com/tbhome/page/sitemap" rel="noopener noreferrer">网站地图</a>
+                    </span>
+                    <span>
+                        <a href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html"
+                            rel="noopener noreferrer">隐私权政策</a>
+                    </span>
+                    <span>
+                        <a href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201811121436_80276.html"
+                            rel="noopener noreferrer">法律声明</a>
+                    </span>
+                    <span>
+                        <a href="http://ipp.alibabagroup.com/" rel="noopener noreferrer">知识产权</a>
+                    </span>
+                    <b>|</b>
+                    <em>© 2003-现在 Taobao.com 版权所有</em>
+                </p>
+                <p><span><a href="http://www.beian.miit.gov.cn" rel="noopener noreferrer">增值电信业务经营许可证：浙B2-20080224</a>
+                    </span>
+                    <b>|</b>
+                    <span>
+                        <a href="http://www.beian.miit.gov.cn" rel="noopener noreferrer">增值电信业务经营许可证（跨地区）：
+                            B2-20150210</a>
+                    </span>
+                    <b>|</b>
+                    <span>
+                        <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/2E7819FC84674D5980464916C24B7E3E"
+                            rel="noopener noreferrer">浙网文（2019）1033-086号</a>
+                    </span>
+                    <b>|</b>
+                    <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</span>
+                </p>
+                <p><span>互联网药品信息服务资格证书（浙）-经营性-2018-0010</span>
+                    <b>|</b>
+                    <span>短消息类服务接入代码使用证书：号【2016】00154-A01</span>
+                    <b>|</b>
+                    <span>信息网络听许可证：1109364号</span>
+                    <b>|</b>
+                    <span>出版物网络台服务经营备案号：新出发浙备字第002号</span>
+                </p>
+                <p><span>
+                        <a target="_blank"
+                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000078"
+                            rel="noopener noreferrer">
+                            <span class="tb-footer-mod"
+                                style="background-position:-861px 0px; width:20px; height: 20px; "></span>
+                            浙公网安备 33010002000078号
+                        </a>
+                    </span>
+                    <b>|</b>
+                    <span>广播电视节目制作经营许可证（浙）字第01012号</span>
+                    <b>|</b>
+                    <span>市场记证：工商网市字3301004120号</span>
+                    <b>|</b>
+                    <span>医疗器械交易服务第三方平台备案：（浙）网械平台备字[2018]第00004号</span>
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <!-- 定位的东西 -->
+
+    <!-- 右侧的回到顶部 -->
+    <!-- <div id="J_SideFloat" class="side-float" style="left: auto; right: 6px;">
+        <a id="J_GoToTop" class="go-to-top J_GoToTop J_MakePoint" data-point="tbcart.8.28" style="visibility: visible;">
+            <span class="iconfont"></span>
+            <em>回到顶部</em>
+        </a>
+
+        <a class="suggestion J_Suggestion J_MakePoint" data-point="tbcart.8.29" target="_blank" href="//survey.taobao.com/survey/QwE0mTiCx?type=3">
+            <span class="iconfont"></span>
+            <em>我要反馈</em>
+        </a>
+    </div> -->
+
+
+</body>
+
+</html>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/shopping_cart.js"></script>

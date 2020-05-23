@@ -1,0 +1,369 @@
+@charset "utf-8";
+#h-nav{
+    width: 100%;
+}
+
+.h-nav-wrap li div span:nth-child(1){
+    margin-right: 7px;
+}
+.h-nav-wrap li div{
+    padding: 0 6px;
+    height: 35px;
+}
+.h-nav-wrap li div span{
+    line-height: 35px;
+    font-size: 12px;
+    color: #6c6c6c;
+}
+.h-nav-wrap{
+    height: 36px;
+}
+.hNavWrap_l{
+    float: left;
+}
+.hNavWrap_l li{
+    float: left;
+}
+.hNavWrap_l li span a,.hNavWrap_r li span a{
+    color: #F22E00;
+}
+.hNavWrap_r{
+    float: right;
+}
+.hNavWrap_r li{
+    float: left;
+}
+
+
+.hNavWrap_r li i{
+    color: #F22E00;
+    font-size: 12px;
+    margin-right: 3px;
+}
+.changeRed{
+    color: #F22E00;
+}
+
+/* 内容的背景 */
+.con_bg{
+    background-color: #fff;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.page{
+    width: 1190px;
+    margin: 0 auto;
+    color: #3c3c3c;
+}
+
+
+.logo_box{
+    position: relative;
+    height: 43px;
+    padding: 20px 0;
+}
+.logo_box .logo{
+    display: inline-block;
+    color: #3c3c3c;
+    font-size: 12px;
+}
+.logo h1 {
+    display: inline-block;
+    zoom: 1;
+    width: 106px;
+    height: 43px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.logo h1 a {
+    text-decoration: none;
+    display: block;
+}
+.logo h1 .iconfont {
+    display: block;
+    color: #ff4001;
+    font-size: 40px;
+    font-weight: 400;
+}
+.logo h2 {
+    display: inline-block;
+    zoom: 1;
+    height: 43px;
+    line-height: 43px;
+    margin-left: 6px;
+    font-size: 22px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+/* 选项卡部分 */
+
+.steps {
+    height: 46px;
+    border-bottom: 2px solid #e6e6e6;
+    position: relative;
+}
+
+.steps ol {
+    display: block;
+    width: 720px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.steps ol li {
+    width: 150px;
+    padding-left: 30px;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #999;
+}
+/* 默认选项 */
+.steps ol li.active {
+    color: #3e3e3e;
+    border-bottom: 2px solid #ff4700;
+}
+.steps ol .active i{
+    background-color: #FF4000;
+}
+/* 序号 */
+.steps ol li i {
+    display: inline-block;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+/* 语言选择 */
+.tsl-switcher {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    font-size: 12px;
+}
+.tsl-switcher a {
+    padding: 3px 5px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #FFF;
+}
+
+
+
+
+/* 建议 */
+.ue-suggest {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: right;
+}
+.ue-suggest img {
+    vertical-align: middle;
+}
+.ue-suggest a {
+    color: #ff5b20;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+
+/* 确定中间内容 */
+.content {
+    padding: 50px 0;
+}
+/* 中间表单内容 */
+.form-list {
+    width: 720px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #3c3c3c;
+ 
+    font-weight: 400;
+}
+
+/* 验证和提交俩个不分都添加点距离 */
+.form-group {
+    padding: 10px 0;
+}
+/* 验证和提交俩个不分都添加点距离 */
+.form-item {
+    padding: 10px 0 10px 260px;
+    line-height: 36px;
+    zoom: 1;
+}
+
+/* 手机号文本 */
+.form-item .form-label {
+    
+    float: left;
+    margin-left: -260px;
+    width: 240px;
+    height: 37px;
+    line-height: 37px;
+    text-align: right;
+}
+/*  */
+.mobile-text {
+    position: relative;
+}
+
+
+.tb-select {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: 0;
+    position: relative;
+    cursor: pointer;/* 鼠标变手 */
+    float: left;
+    padding-left: 10px;
+    height: 35px;
+    border-right: 0;
+    font-weight: 700;
+    overflow: hidden;
+    width: 150px;
+    user-select: none;
+    border-right: 1px solid #ccc;
+}
+/* 文本 */
+.tb-select .text {
+    float: left;
+    width: 85px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 35px;
+}
+/* +86 */
+.tb-select .code {
+    float: right;
+    margin-right: 25px;
+}
+/* 下拉小标识 */
+.tb-select .tb-select-dropdown {
+    position: absolute;
+    top: 15px;
+    right: 8px;
+    width: 10px;
+    height: 5px;
+    background: url(../img/xialajiantou.png) center no-repeat ;
+    background-size:10px 5px;
+}
+.form-text{
+    width: 140px;
+    float: left;
+    border: 1px solid #dedede;
+    height: 17px;
+    line-height: 17px;
+    padding: 9px;
+    font-size: 14px;
+}
+
+
+/* 提交按钮 */
+.form-item {/* 公共样式 */
+    padding: 10px 0 10px 260px;
+    line-height: 36px;
+}
+
+
+.form-item-short {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/*  */
+.btn-large {
+    min-width: 180px;
+}
+.btn-disabled {
+    background-color: #ededed;
+    border-color: #ededed;
+    color: #999;
+    cursor: default;
+}
+.btn {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ededed;
+    border-color: #ededed;
+    color: #999;
+    cursor: default;
+    border: 0;
+    border-radius: 3px;
+    min-width: 180px;
+    font-family: "宋体";
+}
+
+
+
+
+
+.f12 {
+    font-size: 12px!important;
+}
+.c_red {
+    color: #ff5b20;
+    text-decoration: none;
+}
+
+
+
+/* 底部 */
+.footer{
+    width: 1190px;
+    margin: 0 auto;
+    padding: 7px 0 9px;
+    border-top: 1px solid #ddd;
+    position: relative;
+    font-size: 12px;
+}
+
+.footer .footer-bd p, .footer .footer-hd p {
+    padding-bottom: 8px;
+    overflow: hidden;
+    *zoom: 1;
+}
+.footer .footer-hd p {
+    margin-bottom: 8px;
+    line-height: 27px;
+    border-bottom: 1px solid #DDD;
+}
+.footer .footer-bd a, .footer .footer-hd a {
+    float: left;
+    margin: 0 4px;
+    white-space: nowrap;
+    color: #6C6C6C;
+}
+.footer .footer-bd span, .footer .footer-hd span {
+    margin: 0 4px;
+}
+.footer .footer-bd em, .footer .footer-bd span, .footer .footer-hd em, .footer .footer-hd span {
+    float: left;
+    white-space: nowrap;
+    color: #9C9C9C;
+}
+.footer .footer-bd b, .footer .footer-hd b {
+    float: left;
+    margin: 0 3px;
+    font-weight: 400;
+    color: #DDD;
+}

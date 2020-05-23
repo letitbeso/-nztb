@@ -1,0 +1,349 @@
+@charset "utf-8";
+body {
+    font-size: 12px;
+}
+
+/* header */
+#header {
+    width: 1200px;
+    height: 44px;
+    padding: 22px 0;
+    margin: 0 auto;
+}
+
+#header>.logo>h1{
+    float: left;
+}
+
+.logo h1 .tb-logo-cn {
+    font-size: 44px;
+    top: -9px;
+    color: #f40
+}
+.logo .link .iconfont {
+    font-size: 16px;
+    color: #f40;
+}
+
+#header>.logo>a{
+    line-height: 44px;
+    float: right;
+}
+
+
+/* content */
+/* 大背景 */
+#content{
+    height: 600px;
+    background: url(https://gtms01.alicdn.com/tps/i1/TB1GTCYLXXXXXcHXpXXcoeQ2VXX-2500-600.jpg) no-repeat -490px top;
+}
+.content-bgc{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content-bgc>a{
+    position: absolute;
+    width: 630px;
+    height: 440px;
+    left: 80px;
+    top: 80px;
+}
+
+#content .content-bgc {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    position: relative;
+    height: 600px;
+    z-index: 2;
+}
+
+
+/* 登录框背景盒子 */
+.login-box-warp {
+    position: absolute;
+    top: 120px;
+    right: 60px;
+    width: 350px;
+}
+/* 登录框盒子 */
+.login-box {
+    width: 300px;
+    min-height: 300px;
+    padding: 25px 25px 23px;
+    color: #6c6c6c;
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+
+/* 右上角登录方式 */
+.login .corner-icon-view .iconfont {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 52px;
+    line-height: 52px;
+    cursor: pointer;
+    color: #f40;
+}
+
+/* 右上角提示文本 */
+.login .corner-icon-view .login-tip {
+    top: 5px;
+    right: 58px;
+    position: absolute;
+    display: block;
+}
+/* 右上角提示文本内容 */
+.login .corner-icon-view .login-tip .poptip {
+    border: 1px solid #f3d995;
+    background: #fefcee;
+    line-height: 16px;
+    position: relative;
+    z-index: 9999;
+    background-color: #fefcee;
+    border: 1px solid #ff9000;
+    padding: 5px 10px;
+    color: #6c6c6c;
+}
+.corner-icon-view .poptip .poptip-arrow {
+    position: absolute;
+    z-index: 10;
+    *zoom: 1;
+    top: 8px;
+    right: 0;
+}
+
+/* 用两个三角拼出尖角 */
+.corner-icon-view .poptip .poptip-arrow em, .corner-icon-view .poptip .poptip-arrow span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: hsla(0,0%,100%,0);
+    border-color: transparent \0;
+    border-style: solid;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    border-left-color: #ff9000;
+}
+
+.corner-icon-view .poptip .poptip-arrow em {
+    top: 0;
+    left: 1px;
+    border-left-color: #ff9000;
+    border-width: 6px 0 6px 6px;
+}
+.corner-icon-view .poptip .poptip-arrow span {
+    border-left-color: #fefcee;
+    border-width: 6px 0 6px 6px;
+}
+
+
+.corner-icon-view .poptip .poptip-content {
+    color: #ff9000;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+.login-view-password .login-switch-tab, .login-view-sms .login-switch-tab {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 4px;
+}
+.login-blocks {
+    margin: 8px 0;
+    text-align: right;
+}
+
+
+
+
+
+/* 当前的登录方式 */
+.login-blocks {
+    margin: 8px 0;
+    text-align: right;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 4px;
+}
+/* a标签 */
+.login-blocks a{
+    height: 18px;
+    line-height: 5px;
+    font-size: 16px;
+    color: #3c3c3c;
+    margin: 9px 10px 0 0;
+    font-weight: 700;
+}
+/* 被选中下面的横岗 */
+ .password-login-tab-item{
+    border-bottom: 2px solid #000;
+}
+
+
+/* 输入框 */
+.fm-field {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+/* 矢量图标的框框 */
+ .fm-field .fm-label-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    background-color: #ccc;
+}
+/* 图标大小 */
+.fm-field .fm-label-icon .iconfont {
+    font-size: 24px;
+}
+
+.fm-text {
+    width: 250px;
+}
+.fm-field .fm-text {
+    border: 1px solid #ccc;
+    height: 42px;
+    outline: none;
+    font-size: 14px;
+    padding-left: 50px;
+    border-color: #f1eeee;
+   
+}
+/* 登录按钮 */
+.width-vertical .fm-btn{
+    width: 300px;
+}
+.fm-button {
+    background: #f40;
+    border-color: #f40;
+    font-size: 16px;
+
+    border: 1px solid #ff9000;
+    border-radius: 3px;
+ 
+    height: 42px;
+    line-height: 42px;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.login-san{
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 0;
+    margin: 8px 0;
+    padding: 0;
+}
+.login-san a{
+    margin-left: 0;
+    color: #6c6c6c;
+    font-size: 12px;
+}
+/* 微博 */
+.login-san .weibo-login .iconfont{
+    color: #e52425;
+    font-size: 16px;
+    margin-right: 3px;    
+    font-style: normal;
+}
+/* 支付宝 */
+.alipay-login .iconfont{
+    color: #1ba9ee;
+    font-size: 16px;
+    margin-right: 3px;
+}
+/* 忘记密码 */
+.login-nopass{
+    margin-top: 16px;
+    margin-bottom: 0;
+    margin: 8px 0;
+    text-align: right;
+    padding: 0;
+}
+.login-nopass a{
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部样式 */
+.footer{
+    position: relative;
+    margin: 60px auto 0;
+    padding: 7px 0 9px;
+    border-top: 1px solid #ddd;
+    width: 1200px;
+}
+.footer .footer-hd p {
+    margin-bottom: 8px;
+    line-height: 27px;
+    border-bottom: 1px solid #ddd;
+}
+.footer .footer-bd a, .footer .footer-hd a {
+    display: inline;
+    margin: 0 4px;
+    white-space: nowrap;
+    color: #6c6c6c;
+
+    font-size: 12px;
+    line-height: 27px;
+}
+.footer .footer-bd b, .footer .footer-hd b {
+    display: inline;
+    margin: 0 3px;
+    font-weight: 400;
+    color: #ddd;
+
+    font-size: 12px;
+    line-height: 27px;
+}
+
+.footer .footer-bd p, .footer .footer-hd p {
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+.footer .footer-bd em, .footer .footer-bd span, .footer .footer-hd em, .footer .footer-hd span {
+    display: inline;
+    white-space: nowrap;
+    color: #9c9c9c;
+}
+.footer .footer-bd a, .footer .footer-hd a {
+    display: inline;
+    margin: 0 4px;
+    white-space: nowrap;
+    color: #6c6c6c;
+}

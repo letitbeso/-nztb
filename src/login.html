@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./font_login/iconfont.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header" class="clearfix">
+        <div class="logo">
+            <h1><a href="//www.taobao.com" title="淘宝网">
+                    <i class="iconfont icon-taobaowang1 tb-logo-cn"></i>
+                    <!-- <i class="iconfont tb-logo-url"></i> -->
+                </a>
+            </h1>
+            <a href="https://survey.taobao.com/survey/Q095thIx2" class="link">
+                <i class="iconfont icon-xinxi"></i> "登录页面"改进建议
+            </a>
+
+        </div>
+    </div>
+
+    <!-- 主题部分 -->
+    <div id="content">
+        <!-- 平铺大框 -->
+        <div class="content-bgc">
+            <a href="https://www.taobao.com/m?spm=a2107.1.0.0.368f11d9OGCIeD"></a>
+
+            <!-- 登录部分-->
+            <div class="login-box-warp">
+                <!-- 登录框 中间部分-->
+                <div class="login-box">
+                    <!-- 登录框内容区 -->
+                    <div class="login">
+                        <!-- 点击改变 （右上角）-->
+                        <div class="corner-icon-view ">
+
+                            <!-- 登录方式转换图标 -->
+                            <i class="iconfont icon-saomadenglu1"></i>
+                            <!-- 提示框 -->
+                            <div class="login-tip">
+                                <div class="poptip">
+                                    <div class="poptip-arrow"><em></em><span></span></div>
+                                    <div class="poptip-content">扫码登录更安全</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 正常登陆 -->
+                        <div class="login-content ">
+                            <!-- 密码框 -->
+                            <div class="login-password">
+
+                                <div class="login-blocks ">
+                                    <a href="javascript:void(0);" target="_self" class="password-login-tab-item">密码登录</a>
+                                    <a href="javascript:void(0);" target="_self" class="sms-login-tab-item">短信登录</a>
+                                </div>
+
+
+                                <!-- 表单内容 -->
+                                <form id="login-form" class="login-form">
+                                    <!-- 用户名 -->
+                                    <div class="fm-field">
+                                        <div>
+                                            <label class="fm-label-icon">
+                                                <i class="iconfont icon-denglu1" title="用户名"></i><!-- 用户图标 -->
+                                            </label>
+                                        </div>
+                                        <div class="input-plain-wrap input-wrap-loginid ">
+                                            <!-- 用户名框 -->
+                                            <input name="fm-login-id" type="text" class="fm-text" id="fm-login-id"
+                                                tabindex="1" aria-label="会员名/邮箱/手机号" placeholder="会员名/邮箱/手机号"
+                                                autocapitalize="off">
+                                        </div>
+                                    </div>
+                                    <!-- 密码 -->
+                                    <div class="fm-field">
+                                        <div>
+                                            <label class="fm-label-icon">
+                                                <i class="iconfont icon-mima1" title="请输入登录密码"></i><!-- 密码图标 -->
+                                            </label>
+                                        </div>
+                                        <!-- 密码框 -->
+                                        <div class="input-plain-wrap input-wrap-password">
+                                            <input name="fm-login-password" type="password" class="fm-text"
+                                                id="fm-login-password" tabindex="2" aria-label="请输入登录密码"
+                                                placeholder="请输入登录密码" maxlength="40" autocapitalize="off">
+                                        </div>
+                                    </div>
+                                    <!-- 登录后的验证 -->
+                                    <!-- <div>
+                                        <div id="nocaptcha-password" class="nc-container tb-login" data-nc-idx="1"
+                                            style="display: none;">
+                                            <div id="nc_1_wrapper" class="nc_wrapper">
+                                                <div id="nc_1_n1t" class="nc_scale">
+                                                    <div id="nc_1__bg" class="nc_bg"></div>
+                                                    <span id="nc_1_n1z" class="nc_iconfont btn_slide"></span>
+                                                    <div id="nc_1__scale_text" class="scale_text slidetounlock"><span
+                                                            class="nc-lang-cnt"
+                                                            data-nc-lang="_startTEXT">请按住滑块，拖动到最右边</span></div>
+                                                    <div id="nc_1_clickCaptcha" class="clickCaptcha">
+                                                        <div class="clickCaptcha_text">
+                                                            <b id="nc_1__captcha_text" class="nc_captch_text"></b>
+                                                            <i id="nc_1__btn_2"
+                                                                class="nc_iconfont nc_btn_2 btn_refresh"></i>
+                                                        </div>
+                                                        <div class="clickCaptcha_img"></div>
+                                                        <div class="clickCaptcha_btn"></div>
+                                                    </div>
+                                                    <div id="nc_1_imgCaptcha" class="imgCaptcha">
+                                                        <div class="imgCaptcha_text"><input id="nc_1_captcha_input"
+                                                                maxlength="6" type="text" style="ime-mode:disabled">
+                                                        </div>
+                                                        <div class="imgCaptcha_img" id="nc_1__imgCaptcha_img"></div>
+                                                        <i id="nc_1__btn_1" class="nc_iconfont nc_btn_1 btn_refresh"
+                                                            onclick="document.getElementById('nc_1__imgCaptcha_img').children[0].click()"></i>
+                                                        <div class="imgCaptcha_btn">
+                                                            <div id="nc_1__captcha_img_text"
+                                                                class="nc_captcha_img_text"></div>
+                                                            <div id="nc_1_scale_submit" class="nc_scale_submit"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="nc_1_cc" class="nc-cc"></div>
+                                                    <i id="nc_1__voicebtn" tabindex="0" role="button"
+                                                        class="nc_voicebtn nc_iconfont" style="display:none"></i>
+                                                    <b id="nc_1__helpbtn" class="nc_helpbtn"><span class="nc-lang-cnt"
+                                                            data-nc-lang="_learning">了解新功能</span></b>
+                                                </div>
+                                                <div id="nc_1__voice" class="nc_voice"></div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <!-- 登录按钮 -->
+                                    <div class="fm-btn">
+                                        <button type="submit" tabindex="3"
+                                            class="fm-button fm-submit password-login">登录</button>
+                                    </div>
+
+                                    <!-- 第三方登录连接 -->
+                                    <div class="login-san">
+                                        <a href="#"
+                                            target="_self" class="weibo-login">
+                                            <i class="iconfont icon-weibo"></i>
+                                            微博登录
+                                        </a>
+                                        <a href="#"
+                                            target="_self" class="alipay-login">
+                                            <i class="iconfont icon-zhifubao"></i>
+                                            支付宝登录
+                                        </a>
+                                    </div>
+                                    <!-- 忘记密码 -->
+                                    <div class="login-nopass">
+                                        <a href="#"
+                                            target="_blank" class="forgot-password-a-link">
+                                            忘记密码
+                                        </a>
+                                        <a href="#"
+                                            target="_blank" class="forgot-username-a-link">
+                                            忘记用户名
+                                        </a>
+                                        <a href="register.html" target="_blank"
+                                            class="register-a-link">
+                                            免费注册
+                                        </a>
+                                    </div>
+                                </form>
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- ************************ -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+
+        <div class="footer-hd">
+            <p>
+                <a href="http://page.1688.com/shtml/about/ali_group1.shtml">阿里巴巴集团</a>
+                <b>|</b>
+                <a href="http://www.alibaba.com">阿里巴巴国际站</a>
+                <b>|</b>
+                <a href="http://www.1688.com">阿里巴巴中国站</a>
+                <b>|</b>
+                <a href="http://www.aliexpress.com">全球速卖通</a>
+                <b>|</b>
+                <a href="http://www.taobao.com">淘宝网</a>
+                <b>|</b>
+                <a href="http://www.tmall.com">天猫</a>
+                <b>|</b>
+                <a href="http://ju.taobao.com">聚划算</a>
+                <b>|</b>
+                <a href="http://www.etao.com">一淘</a>
+                <b>|</b>
+                <a href="http://www.alimama.com">阿里妈妈</a>
+                <b>|</b>
+                <a href="https://www.fliggy.com">飞猪</a>
+                <b>|</b>
+                <a href="http://www.xiami.com">虾米</a>
+                <b>|</b>
+                <a href="http://www.aliyun.com">阿里云计算</a>
+                <b>|</b>
+                <a href="http://www.yunos.com">云OS</a>
+                <b>|</b>
+                <a href="http://www.net.cn">万网</a>
+                <b>|</b>
+                <a href="http://www.alipay.com">支付宝</a>
+                <b>|</b>
+                <a href="http://www.laiwang.com/">来往</a>
+            </p>
+        </div>
+        <div class="footer-bd">
+            <p>
+                <span>
+                    <a href="https://www.taobao.com/tbhome/page/about/home">关于淘宝</a>
+                </span>
+                <span>
+                    <a
+                        href="https://www.taobao.com/tbhome/page/about/partner?spm=a21bo.9614792.102.5.ed410c5siU20Y">合作伙伴</a>
+                </span>
+                <span>
+                    <a href="http://pro.taobao.com">营销中心</a>
+                </span>
+                <span>
+                    <a href="http://jubao.alibaba.com/internet/readme.htm?site=taobao">廉正举报</a>
+                </span>
+                <span>
+                    <a href="https://consumerservice.taobao.com/">联系客服</a>
+                </span>
+                <span>
+                    <a href="http://open.taobao.com">开放平台</a>
+                </span>
+                <span>
+                    <a href="http://www.taobao.com/about/join.php">诚征英才</a>
+                </span>
+                <span>
+                    <a href="http://consumerservice.taobao.com/contact-us">联系我们</a>
+                </span>
+                <span>
+                    <a href="https://www.taobao.com/tbhome/page/sitemap">网站地图</a>
+                </span>
+                <span>
+                    <a
+                        href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html">隐私权政策</a>
+                </span>
+                <span>
+                    <a
+                        href="https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201811121436_80276.html">法律声明</a>
+                </span>
+                <span>
+                    <a href="http://ipp.alibabagroup.com/">知识产权</a>
+                </span>
+                <b>|</b>
+                <em>© 2003-现在 Taobao.com 版权所有</em>
+            </p>
+
+
+            <p>
+                <span>
+                    <a href="http://www.beian.miit.gov.cn" rel="noopener noreferrer">增值电信业务经营许可证：浙B2-20080224</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://www.beian.miit.gov.cn" rel="noopener noreferrer">增值电信业务经营许可证（跨地区）：B2-20150210</a>
+                </span>
+                <b>|</b>
+                <span>
+                    <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/2E7819FC84674D5980464916C24B7E3E"
+                        rel="noopener noreferrer">浙网文（2019）1033-086号</a>
+                </span>
+                <b>|</b>
+                <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</span>
+            </p>
+
+
+            <p>
+                <span>互联网药品信息服务资格证书（浙）-经营性-2018-0010</span>
+                <b>|</b>
+                <span>短消息类服务接入代码使用证书：号【2016】00154-A01</span>
+                <b>|</b><span>信息网络传播视听许可证：1109364号</span><b>|</b>
+                <span>出版物网络交易平台服务经营备案号：新出发浙备字第002号</span>
+            </p>
+            <p>
+                <span>
+                    <a target="_blank"
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000078"
+                        rel="noopener noreferrer">
+                        <span class="tb-footer-mod"
+                            style="background-position:-861px 0px; width:20px; height: 20px; "></span>
+                        浙公网安备 33010002000078号
+                    </a>
+                </span>
+                <b>|</b>
+                <span>广播电视节目制作经营许可证（浙）字第01012号</span>
+                <b>|</b>
+                <span>市场名称登记证：工商网市字3301004120号</span>
+                <b>|</b>
+                <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00004号</span>
+            </p>
+        </div>
+
+
+        <div class="footer-ft" style="font-size:40px;">
+            <!-- 直接用行内样式以免出错 -->
+            <a target="_blank" href="http://www.pingpinganan.gov.cn/" rel="noopener noreferrer"
+                style="margin-left:15px; display:inline-block; background-position:0px 0px; width:36px; height:40px;  background-image: url(http://img.alicdn.com/tps/i1/T1FeW3XXNfXXXXXXXX-36-36.gif);">
+            </a>
+            <a target="_blank" href="http://idinfo.zjamr.zj.gov.cn//bscx.do?method=lzxx&amp;id=3301843301002003002431"
+                class="tb-footer-mod" rel="noopener noreferrer"
+                style="margin-left:15px; display:inline-block; height: 40px; background-position:0px 0px; width:30px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+            </a>
+            <a target="_blank"
+                href="http://idinfo.zjaic.gov.cn/bscx.do?spm=1.7274553.1997523009.29.alN7ce&amp;method=hddoc&amp;id=33018400000067"
+                class="tb-footer-mod" rel="noopener noreferrer"
+                style="background-position:-40px 0px; width:33px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+            </a>
+            <a target="_blank" href="http://www.theclimategroup.org.cn/about/friend?spm=1.7274553.1997523009.30.alN7ce"
+                class="tb-footer-mod" rel="noopener noreferrer"
+                style="background-position:-80px 0px; width:50px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+            </a>
+            <a target="_blank"
+                href="https://ss.knet.cn/verifyseal.dll?spm=1.7274553.1997523009.31.alN7ce&amp;&amp;sn=2010062300100001357&amp;pa=20100701"
+                class="tb-footer-mod" rel="noopener noreferrer"
+                style="background-position:-140px 0px; width:83px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+            </a>
+            <a target="_blank" href="http://report.12377.cn:13225/toreportinputNormal_anis.do" class="tb-footer-mod"
+                rel="noopener noreferrer"
+                style="background-position:0px -18px; width:250px; background-image: url(//img.alicdn.com/tfs/TB1N7kwRVXXXXbAapXXXXXXXXXX-500-127.png_250x250); margin-left:15px; display:inline-block; height: 40px;">
+            </a>
+            <a target="_blank" href="http://www.12377.cn/node_548446.htm" class="tb-footer-mod"
+                rel="noopener noreferrer"
+                style="background-position:-650px 0px; width:105px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+            </a>
+            <a target="_blank"
+                href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/2E7819FC84674D5980464916C24B7E3E"
+                class="tb-footer-mod" rel="noopener noreferrer"
+                style="background-position:-345px 0px; width:82px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+            </a>
+            <a target="_blank" href="https://credit.szfw.org/CX20160715023573390688.html" class="tb-footer-mod"
+                rel="noopener noreferrer"
+                style="background-position:-761px 0px; width:97px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+            </a>
+            <a target="_blank" href="http://jb.ccm.gov.cn/" class="tb-footer-mod" rel="noopener noreferrer"
+                style="background-position:-884px 0px; width:249px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+            </a>
+        </div>
+        <!-- #footer END -->
+    </div>
+</body>
+
+</html>

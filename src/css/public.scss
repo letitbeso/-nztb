@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.h-nav-wrap,.h-banner-wrap,.cup-wrap,.nav-wrap,.screen-wrap,.layer-wrap{
+    width: 1190px;
+    margin: 0 auto;
+}
+body{
+    background-color: #f5f5f5;
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+
+#h-nav{
+    width: 100%;
+}
+
+.h-nav-wrap li div span:nth-child(1){
+    margin-right: 7px;
+}
+.h-nav-wrap li div{
+    padding: 0 6px;
+    height: 35px;
+}
+.h-nav-wrap li div span{
+    line-height: 35px;
+    font-size: 12px;
+    color: #6c6c6c;
+}
+.h-nav-wrap{
+    height: 36px;
+}
+
+
+.hNavWrap_l{
+    float: left;
+}
+.hNavWrap_l li{
+    float: left;
+}
+
+.hNavWrap_r{
+    float: right;
+}
+.hNavWrap_r li{
+    float: left;
+}
+
+/* 内容背景 */
+.page{
+    width: 100%;
+    min-height: 800px;
+    background-color: #fff;
+}
+

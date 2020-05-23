@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .infoimg {
+            float: left;
+            padding: 0 20px 30px 0;
+            position: relative;
+            width: 420px;
+        }
+
+        .infoimg img {
+            display: block;
+            /* height: 320px; */
+            width: 420px;
+        }
+
+        .allImg {
+            height: 58px;
+            margin: 15px 0 0 10px;
+            overflow: hidden;
+            width: 310px;
+        }
+
+        .allImg img {
+            cursor: pointer;
+            float: left;
+            height: 54px;
+            margin-right: 3px;
+            padding: 2px;
+            width: 54px;
+        }
+
+        .allImg img.current {
+            border: 1px solid #f1f1f1;
+            padding: 1px;
+        }
+
+        .mainImg {
+            position: relative;
+        }
+
+        .mainImg .zoom_pup {
+            background: #000;
+            opacity: .3;
+            cursor: move;
+            height: 175px;
+            left: 0px;
+            position: absolute;
+            top: 160px;
+            width: 175px;
+            display: none;
+        }
+
+        /* 鼠标 */
+        .mainImg:hover .zoom_pup,.mainImg:hover .big_pic{
+          display: block;
+        }
+        
+
+        .big_pic {
+            background-color: #fff;
+            border: 1px solid #f5f5f5;
+            height: 500px;
+            left: 450px;
+            overflow: hidden;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            width: 400px;
+            display: none;
+        }
+
+        .big_pic img {
+            width: 800px;
+            height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="infoimg">
+        <div class="mainImg" id="largePicDiv">
+            <!-- 原图 -->
+            <img id="largePic" src="./img/youhuo03.webp" alt="" />
+            <div class="zoom_pup" id="move"></div>
+            <!-- 放大提 -->
+            <div id="detailPic" class="big_pic">
+                <img alt="" src="./img/youhuo03.webp" />
+            </div>
+        </div>
+        <!-- 缩略图 -->
+        <div class="allImg">
+            <img src="./img/youhuo03.webp" alt="" />
+            <img src="./img/youhuo04.webp" alt="" />
+            <img src="./img/youhuo05.webp" alt="" />
+         
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="./js/jquery-3.2.1.min.js"></script>
+
+
+<script>
+    //切换图片
+  $(".allImg img").mouseover(function() {
+    $(".allImg img").removeClass("current");
+    $(this).addClass("current");
+    var src = $(this).attr("src");
+
+    $("#largePic").attr("src", src.replace("_x", "_w"));
+    $("#detailPic img").attr("src", src.replace("_x", "_b"));
+ 
+  });
+   
+  //放大镜效果
+  $("#largePicDiv").bind("mousemove",
+    function(e) {
+      var ev = e || event;
+      var mouseX = ev.pageX;
+      var mouseY = ev.pageY;
+      var picLeft = $("#largePic").offset().left;
+      var picTop = $("#largePic").offset().top;
+      var picWidth = $("#largePic").width();
+      var picHeight = $("#largePic").height();
+      var xLength = mouseX - picLeft;
+      var yLength = mouseY - picTop;
+      var qWidth = picWidth / 4;
+      var lastQWidth = picWidth - picWidth / 4;
+      var qHeight = picHeight / 4;
+      var lastQHeight = picHeight - picHeight / 4;
+      if (xLength < qWidth) {
+        $("#move").css("left","0px");
+      } else {
+        if (xLength > lastQWidth) {
+          $("#move").css("left", (lastQWidth - qWidth) + "px");
+        } else {
+          $("#move").css("left", (xLength - qWidth) + "px");
+        }
+      }
+      if (yLength < qHeight) {
+        $("#move").css("top", "0px");
+      } else {
+        if (yLength > lastQHeight) {
+          $("#move").css("top", (lastQHeight - qHeight) + "px");
+        } else {
+          $("#move").css("top", (yLength - qHeight) + "px");
+        }
+      }
+      $("#detailPic > img").css("left", parseInt($("#move").css("left")) * (-800 / picWidth) + "px").css("top", parseInt($("#move").css("top")) * (-800 / picWidth) + "px").css("position", "absolute");
+    });
+</script>
